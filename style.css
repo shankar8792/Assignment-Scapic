@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.box {
+    background-color: #fafafa;
+    height: -webkit-fill-available;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+	text-align: center;
+    padding-top: 250px;
+}
+
+.box button {
+    background-color: #fff;
+    width: 380px;
+    text-align: left;
+    height: 50px;
+    outline: 0px;
+    border: none;
+    padding-left: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+	border-radius: 5px;
+}
+
+#myDIV {
+    width: 380px;
+    margin: 0 auto;
+}
+
+#myDIV p {
+   background-color: #fff;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 10px;
+    line-height: 18px;
+	margin-top: 0;
+    padding-bottom: 25px;
+}
+
+.box button:hover {
+    cursor: pointer;
+    box-shadow: 1px 6px 5px #ccc;
+}
+
+.box button:after {
+    content: "\f107";
+    float: right;
+    font-family: fontawesome;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+/*-------------------------------------Assignment2 started-----------------------------*/
+
+.main:disabled {
+    background-color: #ccc !important;
+	color:#fff !important;
+	cursor: not-allowed !important;
+}
+
+.main {
+    background-color: #f10932;
+    width: 200px;
+    border: 0px;
+    color: #fff;
+    padding: 15px 0px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 400;
+	cursor: pointer;
+}
+
+.content{
+    text-align: center;
+    padding-top: 250px;
+	
+}
+
+.dis-en {
+    margin-top: 25px;
+}
+
+.dis-en button {
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #bbb;
+    padding: 2px 15px;
+    color: #000;
+    font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*--------------------------------------------------------------assignment4----------------------*/
+
+.first-way, .second-way, .third-way {
+    float: left;
+    width: 30%;
+}
+
+
+
+.content-one,
+.content-two,
+.content-three {
+width: 200px;
+height: 200px;
+}
+.circle-one,
+.circle-two,
+.circle-three {
+width: 60px;
+height: 60px;
+border-radius: 80px;
+}
+.content-one {
+background: pink;
+    position: relative;
+}
+
+.content-two {
+	background: orange;
+    position: relative;
+}
+.content-three {
+	background: violet;
+    position: relative;
+}
+
+/*------------------------------------------FIRST WAY -------------------------------------------------------*/
+.circle-one {
+	background : red;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.circle-two {
+	background : white;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.circle-three {
+	background : blue;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+/*------------------------------------------SECOND WAY -------------------------------------------------------*/
+.second-way .circle-one {
+    position: initial;
+    transform: translate(70px, 68px);
+    margin: 0;
+}
+
+.second-way .circle-two {
+    position: initial;
+    transform: translate(70px, 68px);
+    margin: 0;
+}
+
+.second-way .circle-three {
+    position: initial;
+    transform: translate(70px, 68px);
+    margin: 0;
+}
+
+/*------------------------------------------THIRD WAY -------------------------------------------------------*/
+
+.third-way .content-one {
+    text-align: -webkit-center;
+}
+.third-way .circle-one {
+    position: initial;
+    transform: translate(0px, 68px);
+}
+
+.third-way .content-two {
+    text-align: -webkit-center;
+}
+.third-way .circle-two {
+    position: initial;
+    transform: translate(0px, 68px);
+}
+
+.third-way .content-two {
+    text-align: -webkit-center;
+}
+.third-way .circle-two {
+    position: initial;
+    transform: translate(0px, 68px);
+}
+
+
+/*-------------------------------Animation hover effect---------------------------------------*/
+.card-two-bar iframe:hover {
+    transform: rotate3d(1, 16, 0, -0.858rad) translate(0px,-5px);
+}
+
+.card-one-bar iframe:hover {
+    transform: rotate3d(0, 132, 1.9, 38deg) translate(-213px, -90px);
+}
+
+.card-one-bar iframe, .card-two-bar iframe {
+    height: 210px;
+    width: 420px;
+}
+
+.card-one-bar iframe {
+    transform: rotate3d(0, 132, 1.9, 38deg) translate(-213px,-70px);
+	transition: transform .3s ease-out;
+    display: inline-block;
+	background-color: #e0e0e0a1;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+	padding-top: 25px;
+}
+
+.card-two-bar iframe {
+    transform: rotate3d(1, 16, 0, -0.858rad) translate(0px,37px);
+	transition: transform .3s ease-out;
+    display: inline-block;
+	background-color: #e0e0e0a1;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+	padding-top: 25px;
+	}
+
+
+.hole-content {
+    text-align: center;
+    background-color: #c9c7c7;
+    padding: 60px;
+    height: -webkit-fill-available;
+}
+
+
+/* -----media Query for responsive mobile,ipad--------------*/
+
+@media (max-width: 767px){
+	
+.box button, #myDIV {
+    width: 90%;
+    }
+	
+
+.box {
+   padding-top: 150px;
+}
+}

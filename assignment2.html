@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Disable/Enable</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<div class="content">
+		<button id="myBtn" class="btn main">Click Me</button>
+	<div class="dis-en">
+	
+	<button class="btn disable" onclick="myFunction1()">Disable Button</button>
+	<button class="btn enable" onclick="myFunction2()">Enable Button</button>
+	</div>
+</div>
+
+
+<script>
+		function myFunction1() {
+			document.getElementById("myBtn").disabled = true;
+
+		}
+
+		function myFunction2() {
+			document.getElementById("myBtn").disabled = false;
+		}
+</script>
+
+</body>
+</html>
